@@ -22,10 +22,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "test-storybook --watchAll # npm run storybook",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=chpt_dc98bb12a2d041d --storybook-build-dir=./storybook-static/"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
